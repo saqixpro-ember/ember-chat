@@ -34,7 +34,7 @@ type IconData = {
     is_spectator: boolean;
 } & (
     | {
-          zulip_icon: string;
+          ember_icon: string;
       }
     | {
           icon: string | undefined;

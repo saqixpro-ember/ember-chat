@@ -1044,7 +1044,7 @@
 }
 
 .user-mention {
-    i.zulip-icon-bot {
+    i.ember-icon-bot {
         vertical-align: middle;
         position: relative;
         top: -1px;

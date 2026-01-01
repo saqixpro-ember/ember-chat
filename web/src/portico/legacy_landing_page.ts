@@ -241,7 +241,7 @@ $(document).on("click", ".markdown h1, .markdown h2, .markdown h3", function () 
     window.location.hash = $(this).attr("id")!;
 });
 
-$(document).on("click", ".nav-zulip-logo", (e) => {
+$(document).on("click", ".nav-ember-logo", (e) => {
     if (document.querySelector(".portico-hello-page")) {
         e.preventDefault();
         window.scrollTo({top: 0, behavior: "smooth"});

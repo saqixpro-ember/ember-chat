@@ -1,80 +1,97 @@
-# Zulip overview
+# Ember Chat
 
-[Zulip](https://zulip.com) is an open-source organized team chat app with unique
-[topic-based threading][why-zulip] that combines the best of email and chat to
-make remote work productive and delightful. Fortune 500 companies, [leading open
-source projects][rust-case-study], and thousands of other organizations use
-Zulip every day. Zulip is the only [modern team chat app][features] that is
-designed for both live and asynchronous conversations.
+Ember Chat is an organized team chat application with topic-based threading that combines the best of email and chat to make remote work productive and delightful.
 
-Zulip is built by a distributed community of developers from all around the
-world, with 99+ people who have each contributed 100+ commits. With
-over 1,500 contributors merging over 500 commits a month, Zulip is the
-largest and fastest growing open source team chat project.
+Built on the proven Zulip open-source platform and customized with Ember branding, Ember Chat provides a modern team chat experience designed for both live and asynchronous conversations.
 
-Come find us on the [development community chat](https://zulip.com/development-community/)!
+## About This Project
 
-[![GitHub Actions build status](https://github.com/zulip/zulip/actions/workflows/zulip-ci.yml/badge.svg)](https://github.com/zulip/zulip/actions/workflows/zulip-ci.yml?query=branch%3Amain)
-[![coverage status](https://img.shields.io/codecov/c/github/zulip/zulip/main.svg)](https://codecov.io/gh/zulip/zulip)
-[![Mypy coverage](https://img.shields.io/badge/mypy-100%25-green.svg)][mypy-coverage]
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![GitHub release](https://img.shields.io/github/release/zulip/zulip.svg)](https://github.com/zulip/zulip/releases/latest)
-[![docs](https://readthedocs.org/projects/zulip/badge/?version=latest)](https://zulip.readthedocs.io/en/latest/)
-[![Zulip chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://chat.zulip.org)
-[![Twitter](https://img.shields.io/badge/twitter-@zulip-blue.svg?style=flat)](https://twitter.com/zulip)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/zulip)](https://github.com/sponsors/zulip)
+Ember Chat is a customized fork of [Zulip](https://github.com/zulip/zulip), an open-source team chat application. We've rebranded and customized it to meet our specific needs while maintaining the powerful features that make Zulip great.
 
-[mypy-coverage]: https://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/
-[why-zulip]: https://zulip.com/why-zulip/
-[rust-case-study]: https://zulip.com/case-studies/rust/
-[features]: https://zulip.com/features/
+### Key Features
 
-## Getting started
+- **Topic-based threading** - Organize conversations by topic for clarity
+- **Powerful search** - Find any message quickly
+- **Rich formatting** - Markdown support, code syntax highlighting
+- **Mobile apps** - Native iOS and Android applications
+- **Integrations** - Connect with your favorite tools
+- **Self-hosted** - Full control over your data
 
-- **Contributing code**. Check out our [guide for new
-  contributors](https://zulip.readthedocs.io/en/latest/contributing/contributing.html)
-  to get started. We have invested in making Zulip’s code highly
-  readable, thoughtfully tested, and easy to modify. Beyond that, we
-  have written an extraordinary 185K words of documentation for Zulip
-  contributors.
+## Getting Started
 
-- **Contributing non-code**. [Report an
-  issue](https://zulip.readthedocs.io/en/latest/contributing/reporting-bugs.html),
-  [translate](https://zulip.readthedocs.io/en/latest/translating/translating.html)
-  Zulip into your language, or [give us
-  feedback](https://zulip.readthedocs.io/en/latest/contributing/suggesting-features.html).
-  We'd love to hear from you, whether you've been using Zulip for years, or are just
-  trying it out for the first time.
+### Prerequisites
 
-- **Checking Zulip out**. The best way to see Zulip in action is to [drop
-  by](https://chat.zulip.org/?show_try_zulip_modal) the Zulip development
-  community (no account required). We also recommend reading about Zulip's
-  [unique approach](https://zulip.com/why-zulip/) to organizing conversations.
+- Ubuntu 22.04 or Debian 11/12
+- At least 2GB RAM
+- Python 3.8+
+- PostgreSQL 14+
 
-- **Running a Zulip server**. Self-host Zulip directly on Ubuntu or Debian
-  Linux, in [Docker](https://github.com/zulip/docker-zulip), or with prebuilt
-  images for [Digital Ocean](https://marketplace.digitalocean.com/apps/zulip) and
-  [Render](https://render.com/docs/deploy-zulip).
-  Learn more about [self-hosting Zulip](https://zulip.com/self-hosting/).
+### Quick Installation
 
-- **Using Zulip without setting up a server**. Learn about [Zulip
-  Cloud](https://zulip.com/zulip-cloud/) hosting options. Zulip sponsors free [Zulip
-  Cloud Standard](https://zulip.com/plans/) for hundreds of worthy
-  organizations, including [fellow open-source
-  projects](https://zulip.com/for/open-source/).
+For detailed installation instructions, see the [Zulip installation documentation](https://zulip.readthedocs.io/en/latest/production/install.html).
 
-- **Participating in [outreach
-  programs](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#outreach-programs)**
-  like [Google Summer of Code](https://developers.google.com/open-source/gsoc/).
+```bash
+# Download and run the installer
+cd /root
+wget https://download.zulip.com/server/zulip-server-latest.tar.gz
+tar -xf zulip-server-latest.tar.gz
+./zulip-server-*/scripts/setup/install
+```
 
-- **Supporting Zulip**. Learn about all the ways you can [support
-  Zulip](https://zulip.com/help/support-zulip-project), including contributing
-  financially, and helping others discover it.
+### Development Setup
 
-You may also be interested in reading our [blog](https://blog.zulip.org/), and
-following us on [LinkedIn](https://www.linkedin.com/company/zulip-project/),
-[Mastodon](https://fosstodon.org/@zulip), and [X](https://x.com/zulip).
+```bash
+# Clone the repository
+git clone https://github.com/your-org/ember-chat.git
+cd ember-chat
 
-Zulip is distributed under the
-[Apache 2.0](https://github.com/zulip/zulip/blob/main/LICENSE) license.
+# Run the development environment
+./tools/provision
+./tools/run-dev
+```
+
+## Documentation
+
+This project is based on Zulip. For comprehensive documentation, refer to:
+
+- [Zulip Documentation](https://zulip.readthedocs.io/)
+- [Zulip API Documentation](https://zulip.com/api/)
+- [Zulip Help Center](https://zulip.com/help/)
+
+## Technology Stack
+
+- **Backend**: Python/Django
+- **Frontend**: TypeScript, jQuery
+- **Database**: PostgreSQL
+- **Cache**: Redis/Memcached
+- **Search**: Custom full-text search
+
+## License
+
+Ember Chat is based on Zulip, which is licensed under the Apache License 2.0.
+
+```
+Copyright 2012–2015 Dropbox, Inc., 2015–2021 Kandra Labs, Inc., and contributors
+
+Modified 2026 as Ember Chat
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+See the [LICENSE](LICENSE) file for the full license text.
+
+## Acknowledgments
+
+This project is built on the excellent work of the Zulip team and community. We're grateful for their contributions to open-source software.
+
+Original Zulip project: https://github.com/zulip/zulip

@@ -38,8 +38,8 @@ export function update_gif_rating(): void {
     // the currently set GIF icon.
     // It won't change the GIF provider without a server restart as of now.
     if (realm.realm_giphy_rating === realm.gif_rating_options.disabled.id) {
-        $(".zulip-icon-gif").hide();
+        $(".ember-icon-gif").hide();
     } else {
-        $(".zulip-icon-gif").show();
+        $(".ember-icon-gif").show();
     }
 }

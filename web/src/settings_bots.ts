@@ -725,7 +725,7 @@ export function set_up_bots(): void {
 
     $("#admin-bot-list").on("click", ".download-bot-zuliprc-button", (e) => {
         const $row = $(e.target).closest(".user_row");
-        const $zuliprc_link = $row.find(".hidden-zuliprc-download");
+        const $zuliprc_link = $row.find(".hidden-emberrc-download");
         const bot_id = Number.parseInt($zuliprc_link.attr("data-user-id")!, 10);
         $zuliprc_link.attr("href", bot_helper.generate_zuliprc_url(bot_id));
         $zuliprc_link[0]?.click();

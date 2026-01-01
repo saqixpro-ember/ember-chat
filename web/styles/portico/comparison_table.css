@@ -3,7 +3,7 @@
     display: none;
 }
 
-.zulip-plans-comparison {
+.ember-plans-comparison {
     --color-heading-text: hsl(0deg 0% 100%);
     --color-table-text: hsl(223deg 40% 25%);
     --color-table-background: hsl(0deg 0% 100% / 80%);
@@ -403,7 +403,7 @@
 
 /* No header to accommodate on self-hosted realms,
    so keep sticky headers at the top of the viewport. */
-.zulip-plans-comparison.is-self-hosted-realm {
+.ember-plans-comparison.is-self-hosted-realm {
     .comparison-table {
         th,
         td.subheader.comparison-table-feature {
@@ -607,20 +607,20 @@
 }
 
 @media (width <= 460px) {
-    .zulip-plans-comparison .comparison-tab-all {
+    .ember-plans-comparison .comparison-tab-all {
         display: none;
     }
 }
 
 @media (width <= 356px) {
-    .zulip-plans-comparison
+    .ember-plans-comparison
         .comparison-table
         td.subheader.comparison-table-feature {
         height: 51px;
         top: 60px;
     }
 
-    .zulip-plans-comparison .comparison-table th {
+    .ember-plans-comparison .comparison-table th {
         height: 51px;
     }
 }

@@ -241,7 +241,7 @@ p.n-margin {
     display: none;
 }
 
-.alert-zulip-logo,
+.alert-ember-logo,
 .top-messages-logo,
 .bottom-messages-logo {
     width: 1.7143em; /* 24px at 14px/em */
@@ -250,19 +250,19 @@ p.n-margin {
 
     & svg {
         & circle {
-            fill: var(--color-zulip-logo);
-            stroke: var(--color-zulip-logo);
+            fill: var(--color-ember-logo);
+            stroke: var(--color-ember-logo);
         }
 
         & path {
-            fill: var(--color-zulip-logo-z);
-            stroke: var(--color-zulip-logo-z);
+            fill: var(--color-ember-logo-z);
+            stroke: var(--color-ember-logo-z);
         }
     }
 
     &.loading circle {
-        fill: var(--color-zulip-logo-loading);
-        stroke: var(--color-zulip-logo-loading);
+        fill: var(--color-ember-logo-loading);
+        stroke: var(--color-ember-logo-loading);
     }
 }
 
@@ -707,7 +707,7 @@ a:not(:active):focus,
 button:focus-visible,
 label.checkbox input[type="checkbox"]:focus ~ .rendered-checkbox,
 i.fa:focus,
-i.zulip-icon:focus-visible,
+i.ember-icon:focus-visible,
 [role="button"]:focus {
     outline: 2px solid var(--color-outline-focus);
     /* TODO: change solid to auto once the Chromium bug #1105822 is fixed */
@@ -814,7 +814,7 @@ strong {
         display: inline-block;
     }
 
-    .tooltip-privacy-icon .zulip-icon-lock {
+    .tooltip-privacy-icon .ember-icon-lock {
         margin-top: -0.15em !important;
     }
 
@@ -1530,7 +1530,7 @@ div.topic_edit_spinner .loading_indicator_spinner {
     }
 }
 
-#about-zulip {
+#about-ember {
     .exit {
         font-size: 1.5rem;
         font-weight: 600;
@@ -1547,19 +1547,19 @@ div.topic_edit_spinner .loading_indicator_spinner {
         border-radius: 4px;
     }
 
-    .zulip-version-info,
-    .zulip-merge-base-info {
+    .ember-version-info,
+    .ember-merge-base-info {
         display: flex;
         align-items: center;
         gap: 5px;
     }
 
-    .about-zulip-logo {
+    .about-ember-logo {
         text-align: center;
         margin: 30px;
     }
 
-    .about-zulip-logo img {
+    .about-ember-logo img {
         height: 40px;
     }
 
@@ -1658,26 +1658,26 @@ div.topic_edit_spinner .loading_indicator_spinner {
     visibility: hidden;
 }
 
-.left-sidebar-toggle-button .zulip-icon-panel-left {
+.left-sidebar-toggle-button .ember-icon-panel-left {
     display: none;
 }
 
 .column-middle.expanded {
-    .left-sidebar-toggle-button .zulip-icon-panel-left {
+    .left-sidebar-toggle-button .ember-icon-panel-left {
         display: none;
     }
 
-    .left-sidebar-toggle-button .zulip-icon-panel-left-dashed {
+    .left-sidebar-toggle-button .ember-icon-panel-left-dashed {
         display: block;
     }
 }
 
 %hide-left-sidebar {
-    .left-sidebar-toggle-button .zulip-icon-panel-left {
+    .left-sidebar-toggle-button .ember-icon-panel-left {
         display: block;
     }
 
-    .left-sidebar-toggle-button .zulip-icon-panel-left-dashed {
+    .left-sidebar-toggle-button .ember-icon-panel-left-dashed {
         display: none;
     }
 
@@ -2259,7 +2259,7 @@ body:not(.spectator-view) {
         line-height: 1.214;
 
         .channel-privacy-type-icon,
-        .zulip-icon-deactivated-circle {
+        .ember-icon-deactivated-circle {
             grid-area: privacy-icon;
             line-height: 1.214;
             font-size: 0.93em;
@@ -2383,13 +2383,13 @@ body:not(.spectator-view) {
     flex-grow: 1;
     color: var(--color-failed-message-send-icon);
 
-    .zulip-icon {
+    .ember-icon {
         padding: 5px;
     }
 }
 
 .emoji-popover-tab-item {
-    .zulip-icon-star {
+    .ember-icon-star {
         position: relative;
         top: 2px;
     }
@@ -2431,20 +2431,20 @@ body:not(.spectator-view) {
         background-color: var(--color-header-button-focus);
     }
 
-    .zulip-icon {
+    .ember-icon {
         color: var(--color-navbar-icon);
     }
 
-    .zulip-icon-gear {
+    .ember-icon-gear {
         font-size: 1.125em; /* 18px at 16px em */
     }
 
-    .zulip-icon-help-bigger,
-    .zulip-icon-user-list {
+    .ember-icon-help-bigger,
+    .ember-icon-user-list {
         font-size: 1.25em; /* 20px at 16px em */
     }
 
-    .zulip-icon-help {
+    .ember-icon-help {
         position: relative;
         top: 0.5px;
         right: -0.5px;
@@ -2452,8 +2452,8 @@ body:not(.spectator-view) {
 }
 
 .left-sidebar-toggle-button {
-    .zulip-icon-panel-left,
-    .zulip-icon-panel-left-dashed {
+    .ember-icon-panel-left,
+    .ember-icon-panel-left-dashed {
         font-size: 1.25em; /* 20px at 16px em */
     }
 }

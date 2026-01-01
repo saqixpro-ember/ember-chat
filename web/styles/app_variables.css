@@ -1,5 +1,5 @@
 :root {
-    /* Zulip color palette */
+    /* Ember color palette */
     /* stylelint-disable color-no-hex */
     /* grey */
     --grey-0: #f7f8fc;
@@ -795,20 +795,20 @@
         hsl(0deg 0% 100% / 30%)
     );
     --color-sidebar-action: light-dark(
-        hsl(240deg 30% 40%),
-        hsl(240deg 35% 68%)
+        hsl(348deg 30% 40%),
+        hsl(348deg 35% 68%)
     );
     --color-sidebar-action-hover: light-dark(
-        hsl(240deg 100% 15%),
-        hsl(240deg 100% 90%)
+        hsl(348deg 100% 25%),
+        hsl(348deg 100% 85%)
     );
     --color-background-sidebar-action-hover: light-dark(
-        hsl(240deg 100% 93%),
-        hsl(240deg 25% 35%)
+        hsl(348deg 100% 95%),
+        hsl(348deg 25% 35%)
     );
     --color-background-navigation-item-hover: light-dark(
-        hsl(240deg 100% 50% / 7%),
-        hsl(240deg 100% 75% / 20%)
+        hsl(348deg 100% 50% / 7%),
+        hsl(348deg 100% 75% / 20%)
     );
     --color-background-sidebar-action-heading-hover: var(
         --color-background-navigation-item-hover
@@ -855,16 +855,16 @@
         hsl(0deg 0% 91% / 10%)
     );
     --color-modal-selectable-icon: light-dark(
-        hsl(240deg 30% 40%),
-        hsl(240deg 35% 68%)
+        hsl(348deg 30% 40%),
+        hsl(348deg 35% 68%)
     );
     --color-modal-selectable-icon-hover: light-dark(
-        hsl(240deg 100% 15%),
-        hsl(240deg 100% 90%)
+        hsl(348deg 100% 25%),
+        hsl(348deg 100% 85%)
     );
     --background-color-modal-selectable-icon-hover: light-dark(
-        hsl(240deg 100% 50% / 7%),
-        hsl(240deg 100% 75% / 20%)
+        hsl(348deg 100% 50% / 7%),
+        hsl(348deg 100% 75% / 20%)
     );
     --background-color-readonly-modal-input: light-dark(
         hsl(240deg 7% 93%),
@@ -1930,16 +1930,16 @@
     --font-weight-message-reaction: 600;
 
     /* Message feed loading indicator colors */
-    --color-zulip-logo: light-dark(
+    --color-ember-logo: light-dark(
         hsl(0deg 0% 0% / 34%),
         hsl(0deg 0% 100% / 50%)
     );
-    --color-zulip-logo-loading: light-dark(hsl(0deg 0% 27%), hsl(0deg 0% 100%));
+    --color-ember-logo-loading: light-dark(hsl(0deg 0% 27%), hsl(0deg 0% 100%));
     --color-recent-view-loading-spinner: light-dark(
         hsl(0deg 0% 27%),
         hsl(0deg 0% 100% / 60%)
     );
-    --color-zulip-logo-z: light-dark(hsl(0deg 0% 100%), hsl(214deg 27% 18%));
+    --color-ember-logo-z: light-dark(hsl(0deg 0% 100%), hsl(214deg 27% 18%));
 
     /* Message collapsing/condensing button colors */
     --color-show-more-less-button-background: light-dark(
@@ -2143,33 +2143,33 @@
         0 41px 80px 0 hsl(0deg 0% 0% / 20%);
     --color-navbar-icon: light-dark(hsl(240deg 20% 50%), hsl(240deg 35% 60%));
     --color-navbar-spectator-low-attention-brand-button-text: light-dark(
-        hsl(240deg 40% 50%),
-        hsl(240deg 55% 72% / 100%)
+        hsl(348deg 100% 50%),
+        hsl(348deg 100% 72% / 100%)
     );
     --color-navbar-spectator-low-attention-brand-button-background: transparent;
     --color-navbar-spectator-low-attention-brand-button-background-hover: light-dark(
-        hsl(240deg 100% 30% / 5%),
-        hsl(240deg 56% 70% / 10%)
+        hsl(348deg 100% 50% / 5%),
+        hsl(348deg 100% 70% / 10%)
     );
     --color-navbar-spectator-low-attention-brand-button-background-active: light-dark(
-        hsl(240deg 100% 30% / 8%),
-        hsl(240deg 56% 70% / 13%)
+        hsl(348deg 100% 50% / 8%),
+        hsl(348deg 100% 70% / 13%)
     );
     --color-navbar-spectator-medium-attention-brand-button-text: light-dark(
-        hsl(240deg 40% 40% / 100%),
-        hsl(240deg 64% 76% / 100%)
+        hsl(348deg 100% 40% / 100%),
+        hsl(348deg 100% 76% / 100%)
     );
     --color-navbar-spectator-medium-attention-brand-button-background: light-dark(
-        hsl(244deg 64% 47% / 10%),
-        hsl(240deg 56% 70% / 12%)
+        hsl(348deg 100% 57% / 10%),
+        hsl(348deg 100% 70% / 12%)
     );
     --color-navbar-spectator-medium-attention-brand-button-background-hover: light-dark(
-        hsl(244deg 64% 47% / 15%),
-        hsl(240deg 56% 70% / 17%)
+        hsl(348deg 100% 57% / 15%),
+        hsl(348deg 100% 70% / 17%)
     );
     --color-navbar-spectator-medium-attention-brand-button-background-active: light-dark(
-        hsl(244deg 64% 47% / 18%),
-        hsl(240deg 56% 70% / 12%)
+        hsl(348deg 100% 57% / 18%),
+        hsl(348deg 100% 70% / 12%)
     );
     --color-gear-menu-lighter-text: light-dark(
         hsl(0deg 0% 40%),
@@ -2226,29 +2226,29 @@
        this file is not imported on billing pages. */
 
     /* Zulip-style button colors. */
-    --color-background-zulip-button: light-dark(
+    --color-background-ember-button: light-dark(
         hsl(0deg 0% 100%),
         hsl(0deg 0% 0% / 20%)
     );
-    --color-background-zulip-button-hover: light-dark(
-        var(--color-background-zulip-button),
+    --color-background-ember-button-hover: light-dark(
+        var(--color-background-ember-button),
         hsl(0deg 0% 0% / 15%)
     );
-    --color-background-zulip-button-active: light-dark(
+    --color-background-ember-button-active: light-dark(
         hsl(0deg 0% 95%),
-        var(--color-background-zulip-button-hover)
+        var(--color-background-ember-button-hover)
     );
-    --color-background-zulip-button-disabled: light-dark(
+    --color-background-ember-button-disabled: light-dark(
         hsl(0deg 0% 93%),
-        var(--color-background-zulip-button)
+        var(--color-background-ember-button)
     );
-    --color-border-zulip-button: light-dark(
+    --color-border-ember-button: light-dark(
         hsl(0deg 0% 80%),
         hsl(0deg 0% 0% / 60%)
     );
-    --color-border-zulip-button-interactive: light-dark(
+    --color-border-ember-button-interactive: light-dark(
         hsl(0deg 0% 60%),
-        var(--color-border-zulip-button)
+        var(--color-border-ember-button)
     );
 
     /* Zulip-style checkbox values. */
@@ -2385,44 +2385,44 @@
         color-mix(in oklch, hsl(0deg 0% 100%) 85%, transparent)
     );
     --color-background-brand-primary-action-button: light-dark(
-        hsl(254deg 99% 68%),
-        hsl(261deg 79% 43%)
+        hsl(348deg 100% 57%),
+        hsl(348deg 80% 37%)
     );
     --color-background-brand-primary-action-button-hover: light-dark(
-        hsl(255deg 81% 61%),
-        hsl(258deg 66% 51%)
+        hsl(348deg 100% 49%),
+        hsl(348deg 85% 47%)
     );
     --color-background-brand-primary-action-button-active: light-dark(
-        hsl(258deg 66% 51%),
-        hsl(261deg 79% 43%)
+        hsl(348deg 100% 42%),
+        hsl(348deg 80% 37%)
     );
     --color-text-brand-quiet-action-button: light-dark(
-        hsl(264deg 95% 34%),
-        hsl(244deg 96% 82%)
+        hsl(348deg 100% 42%),
+        hsl(348deg 100% 75%)
     );
     --color-background-brand-quiet-action-button: light-dark(
-        color-mix(in oklch, hsl(254deg 99% 68%) 12%, transparent),
-        color-mix(in oklch, hsl(246deg 96% 79%) 12%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 57%) 12%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 75%) 12%, transparent)
     );
     --color-background-brand-quiet-action-button-hover: light-dark(
-        color-mix(in oklch, hsl(254deg 99% 68%) 17%, transparent),
-        color-mix(in oklch, hsl(246deg 96% 79%) 17%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 57%) 17%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 75%) 17%, transparent)
     );
     --color-background-brand-quiet-action-button-active: light-dark(
-        color-mix(in oklch, hsl(254deg 99% 68%) 22%, transparent),
-        color-mix(in oklch, hsl(246deg 96% 79%) 12%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 57%) 22%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 75%) 12%, transparent)
     );
     --color-text-brand-borderless-action-button: light-dark(
-        hsl(255deg 54% 50%),
-        hsl(246deg 96% 79%)
+        hsl(348deg 100% 50%),
+        hsl(348deg 100% 75%)
     );
     --color-background-brand-borderless-action-button-hover: light-dark(
-        color-mix(in oklch, hsl(264deg 100% 22%) 5%, transparent),
-        color-mix(in oklch, hsl(251deg 100% 72%) 14%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 42%) 5%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 65%) 14%, transparent)
     );
     --color-background-brand-borderless-action-button-active: light-dark(
-        color-mix(in oklch, hsl(264deg 100% 22%) 10%, transparent),
-        color-mix(in oklch, hsl(251deg 100% 72%) 18%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 42%) 10%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 65%) 18%, transparent)
     );
     /* Action buttons -- Info Variant */
     --color-text-info-primary-action-button: light-dark(

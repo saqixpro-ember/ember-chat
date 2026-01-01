@@ -473,7 +473,7 @@ h4.user_group_setting_subsection_title {
                 display: inline-block;
                 margin-left: 5px;
 
-                .zulip-icon {
+                .ember-icon {
                     font-size: 0.75em; /* 18px at 24px/em */
                 }
             }
@@ -1152,7 +1152,7 @@ h4.user_group_setting_subsection_title {
                 font-weight: 700;
             }
 
-            .zulip-icon {
+            .ember-icon {
                 font-size: 1.2857em; /* 18px at 14px/em */
             }
         }
@@ -1334,7 +1334,7 @@ h4.user_group_setting_subsection_title {
 }
 
 .stream-settings-color-selector {
-    border: 1px solid var(--color-border-zulip-button);
+    border: 1px solid var(--color-border-ember-button);
     display: flex;
     align-items: center;
     gap: 10px;

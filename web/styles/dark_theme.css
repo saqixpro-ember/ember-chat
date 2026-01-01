@@ -115,7 +115,7 @@
     }
 
     #recent_view_table {
-        .zulip-icon-user {
+        .ember-icon-user {
             opacity: 0.7;
         }
     }
@@ -271,13 +271,13 @@
     & a:not(:active):focus,
     button:not(.action-button, .icon-button):focus-visible,
     i.fa:focus,
-    i.zulip-icon:focus,
+    i.ember-icon:focus,
     [role="button"]:focus {
         outline-color: hsl(0deg 0% 67%);
     }
 
     .color_animated_button {
-        .zulip-icon {
+        .ember-icon {
             color: hsl(0deg 0% 100%);
         }
     }

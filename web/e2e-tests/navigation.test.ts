@@ -8,7 +8,7 @@ async function navigate_using_left_sidebar(page: Page, stream_name: string): Pro
     console.log("Visiting #" + stream_name);
     const stream_id = await page.evaluate(() => zulip_test.get_sub("Verona")!.stream_id);
     await page.click(`.narrow-filter[data-stream-id="${stream_id}"] .stream-name`);
-    await page.waitForSelector("#message_view_header .zulip-icon-hashtag", {visible: true});
+    await page.waitForSelector("#message_view_header .ember-icon-hashtag", {visible: true});
 }
 
 async function open_menu(page: Page): Promise<void> {
@@ -59,7 +59,7 @@ async function navigate_to_private_messages(page: Page): Promise<void> {
     await page.waitForSelector(all_private_messages_icon, {visible: true});
     await page.click(all_private_messages_icon);
 
-    await page.waitForSelector("#message_view_header .zulip-icon-user", {visible: true});
+    await page.waitForSelector("#message_view_header .ember-icon-user", {visible: true});
 }
 
 async function test_reload_hash(page: Page): Promise<void> {
@@ -94,12 +94,12 @@ async function navigation_tests(page: Page): Promise<void> {
     await navigate_using_left_sidebar(page, "Verona");
 
     await page.click("#left-sidebar-navigation-list .top_left_all_messages");
-    await page.waitForSelector("#message_view_header .zulip-icon-all-messages", {visible: true});
+    await page.waitForSelector("#message_view_header .ember-icon-all-messages", {visible: true});
 
     await navigate_to_subscriptions(page);
 
     await page.click("#left-sidebar-navigation-list .top_left_all_messages");
-    await page.waitForSelector("#message_view_header .zulip-icon-all-messages", {visible: true});
+    await page.waitForSelector("#message_view_header .ember-icon-all-messages", {visible: true});
 
     await navigate_to_settings(page);
     await navigate_to_private_messages(page);

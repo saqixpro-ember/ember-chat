@@ -234,7 +234,7 @@ const INSECURE_DESKTOP_APP_BANNER: AlertBanner = {
         {
             attention: "quiet",
             label: $t({defaultMessage: "Download the latest version"}),
-            custom_classes: "download-latest-zulip-version",
+            custom_classes: "download-latest-ember-version",
         },
     ],
     close_button: true,
@@ -516,7 +516,7 @@ export function initialize(): void {
         );
     });
 
-    $("#navbar_alerts_wrapper").on("click", ".download-latest-zulip-version", () => {
+    $("#navbar_alerts_wrapper").on("click", ".download-latest-ember-version", () => {
         window.open("https://zulip.com/apps/", "_blank", "noopener,noreferrer");
     });
 

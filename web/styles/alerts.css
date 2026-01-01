@@ -177,7 +177,7 @@
     }
 
     &.alert-loading {
-        .alert-zulip-logo,
+        .alert-ember-logo,
         .loading-indicator {
             display: block;
         }
@@ -208,7 +208,7 @@
         margin-left: 0;
     }
 
-    .alert-zulip-logo {
+    .alert-ember-logo {
         display: none;
         margin: auto;
         grid-column: 1 / 2;

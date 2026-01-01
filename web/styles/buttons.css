@@ -38,12 +38,12 @@
     }
 
     &:focus {
-        /* Override common button outline style set in zulip.css and dark_theme.css */
+        /* Override common button outline style set in ember.css and dark_theme.css */
         outline: none;
     }
 
     &:focus-visible {
-        /* Override common button outline style set in zulip.css and dark_theme.css */
+        /* Override common button outline style set in ember.css and dark_theme.css */
         outline: var(--outline-width-button-focus) solid
             var(--color-outline-button-focus) !important;
         outline-offset: var(--outline-offset-button-focus);
@@ -65,7 +65,7 @@
         opacity: 0.5;
     }
 
-    .zulip-icon {
+    .ember-icon {
         /* We apply the same line-height to icons,
            as those applied to the label element,
            to maintain a consistent height for
@@ -445,12 +445,12 @@
     }
 
     &:focus {
-        /* Override common button outline style set in zulip.css and dark_theme.css */
+        /* Override common button outline style set in ember.css and dark_theme.css */
         outline: none;
     }
 
     &:focus-visible {
-        /* Override common button outline style set in zulip.css and dark_theme.css */
+        /* Override common button outline style set in ember.css and dark_theme.css */
         outline: var(--outline-width-button-focus) solid
             var(--color-outline-button-focus) !important;
         outline-offset: var(--outline-offset-button-focus);
@@ -674,7 +674,7 @@
     }
 
     .action-button-label,
-    .zulip-icon {
+    .ember-icon {
         visibility: visible !important;
     }
 }

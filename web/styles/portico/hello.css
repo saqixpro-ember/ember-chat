@@ -541,7 +541,7 @@ ul {
         background: linear-gradient(
             180deg,
             hsl(236deg 47% 50%) 0%,
-            hsl(250deg 50% 45%) 99.36%
+            hsl(348deg 80% 45%) 99.36%
         );
 
         .screen-3__quotes {
@@ -598,7 +598,7 @@ ul {
     .screen-4 {
         background: linear-gradient(
             180deg,
-            hsl(250deg 50% 45%) 0%,
+            hsl(348deg 80% 45%) 0%,
             hsl(281deg 68% 55%) 100%
         );
     }
@@ -749,7 +749,7 @@ ul {
         }
 
         .screen-5 .quote__text {
-            background: hsl(255deg 52% 80%);
+            background: hsl(348deg 100% 80%);
         }
 
         & footer {

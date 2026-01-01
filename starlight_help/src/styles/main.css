@@ -22,7 +22,7 @@
     --color-user-circle-deactivated: hsl(0deg 0% 50%);
     /* stylelint-enable color-no-hex */
 
-    /* NOTE: These colors are also used in zulip web app for banner
+    /* NOTE: These colors are also used in ember web app for banner
        colors. Do grep for these variables when changing them and
        confirm on CZO on whether the colors there need to change as
        well. */
@@ -41,16 +41,16 @@
     );
     /* Banners - Brand Variant */
     --color-text-brand-banner: light-dark(
-        hsl(264deg 95% 34%),
-        hsl(244deg 96% 82%)
+        hsl(348deg 100% 42%),
+        hsl(348deg 100% 82%)
     );
     --color-border-brand-banner: light-dark(
-        color-mix(in oklch, hsl(254deg 60% 50%) 40%, transparent),
-        color-mix(in oklch, hsl(253deg 70% 89%) 40%, transparent)
+        color-mix(in oklch, hsl(348deg 100% 50%) 40%, transparent),
+        color-mix(in oklch, hsl(348deg 100% 85%) 40%, transparent)
     );
     --color-background-brand-banner: light-dark(
-        hsl(254deg 42% 94%),
-        hsl(253deg 49% 16%)
+        hsl(348deg 100% 96%),
+        hsl(348deg 80% 16%)
     );
     /* Banners - Info Variant */
     --color-text-info-banner: light-dark(
@@ -91,7 +91,7 @@
     padding: 1rem var(--sl-content-pad-x);
 }
 
-.zulip-unplugin-icon {
+.ember-unplugin-icon {
     /* Make sure the icon does not occupy it's own row. */
     display: inline;
     vertical-align: text-bottom;
@@ -115,7 +115,7 @@
     fill: currentcolor;
 }
 
-.navigation-step-relative-type .zulip-unplugin-icon {
+.navigation-step-relative-type .ember-unplugin-icon {
     /* There's no space between the icon and text for navigation
     step labels because of any text decoration rules when these
     steps have a relative link. So we add a right margin to the

@@ -70,7 +70,7 @@
             }
         }
 
-        &#zulip-administration {
+        &#ember-administration {
             font-size: 1.75em;
             padding: 10px 0;
             margin-bottom: 0;
@@ -241,13 +241,13 @@
         }
     }
 
-    & i.zulip-icon {
+    & i.ember-icon {
         margin: 0 2px 2px;
         vertical-align: middle;
     }
 
-    & i.zulip-icon.mobile-help {
-        color: hsl(244deg 69% 62%);
+    & i.ember-icon.mobile-help {
+        color: hsl(348deg 100% 62%);
     }
 
     & a {
@@ -390,7 +390,7 @@
     }
 
     & code {
-        /* Same font-family as zulip.css */
+        /* Same font-family as ember.css */
         font-family: "Source Code Pro", monospace;
         /* Same as base rules for code elements in rendered_markdown.css */
         font-size: 0.825em;

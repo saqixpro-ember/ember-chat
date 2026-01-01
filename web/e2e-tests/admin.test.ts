@@ -142,7 +142,7 @@ async function test_add_emoji(page: Page): Promise<void> {
 
     const emoji_upload_handle = await page.$("input#emoji_file_input");
     assert.ok(emoji_upload_handle);
-    await emoji_upload_handle.uploadFile("static/images/logo/zulip-icon-128x128.png");
+    await emoji_upload_handle.uploadFile("static/images/logo/ember-icon-128x128.png");
     await page.click("#add-custom-emoji-modal .dialog_submit_button");
     await common.wait_for_micromodal_to_close(page);
 
@@ -178,7 +178,7 @@ async function test_custom_realm_emoji(page: Page): Promise<void> {
 async function test_upload_realm_icon_image(page: Page): Promise<void> {
     const upload_handle = await page.$("#realm-icon-upload-widget input.image_file_input");
     assert.ok(upload_handle);
-    await upload_handle.uploadFile("static/images/logo/zulip-icon-128x128.png");
+    await upload_handle.uploadFile("static/images/logo/ember-icon-128x128.png");
 
     await common.wait_for_micromodal_to_open(page);
     await page.click("#uppy-editor .dialog_submit_button");

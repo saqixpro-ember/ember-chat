@@ -443,7 +443,7 @@ select.settings_select {
 
 #bot-edit-form {
     .api-key-details-container,
-    .zuliprc-container {
+    .emberrc-container {
         display: flex;
         align-items: center;
         gap: 0.25em;
@@ -455,7 +455,7 @@ select.settings_select {
     }
 }
 
-#zuliprc-section {
+#emberrc-section {
     .modal-field-label {
         margin-bottom: 0;
     }
@@ -588,7 +588,7 @@ input[type="checkbox"] {
         padding: 0.25em 0.375em;
     }
 
-    .zulip-icon {
+    .ember-icon {
         font-size: 1.15em;
         width: 1.15em;
         height: 1.15em;
@@ -1160,7 +1160,7 @@ input[type="checkbox"] {
     margin: 0 0 10px;
 }
 
-#download_zuliprc {
+#download_emberrc {
     color: hsl(0deg 0% 100%);
     text-decoration: none;
 }
@@ -1352,8 +1352,8 @@ label.preferences-radio-choice-label {
     margin-right: 1px;
 }
 
-.download_bot_zuliprc,
-.copy_zuliprc,
+.download_bot_emberrc,
+.copy_emberrc,
 .open_bots_subscribed_streams,
 .manage-bot-button,
 .deactivate-bot-button {
@@ -2087,7 +2087,7 @@ label.preferences-radio-choice-label {
 
 @media (width < $ml_min) {
     #api_key_buttons,
-    #download_zuliprc {
+    #download_emberrc {
         flex-direction: column;
         margin-top: 5px;
     }
@@ -2194,7 +2194,7 @@ label.preferences-radio-choice-label {
                 color: var(--color-text-clear-search-button-hover);
             }
 
-            .zulip-icon-close {
+            .ember-icon-close {
                 align-self: center;
             }
         }

@@ -224,7 +224,7 @@
         display: none;
     }
 
-    .zulip-loading-logo {
+    .ember-loading-logo {
         margin: 0 auto;
         width: 30px;
         /* Adjusting height moves the loading spinner vertically.
@@ -232,12 +232,12 @@
         height: 23px;
     }
 
-    .zulip-loading-logo svg circle {
+    .ember-loading-logo svg circle {
         fill: hsl(0deg 0% 27%);
         stroke: hsl(0deg 0% 27%);
     }
 
-    .zulip-loading-logo svg path {
+    .ember-loading-logo svg path {
         fill: hsl(0deg 0% 100%);
         stroke: hsl(0deg 0% 100%);
     }
@@ -312,7 +312,7 @@ input[name="licenses"] {
     /* This is needed to avoid button background changing
     when clicking on it due to "button:active" CSS in
     legacy_landing_page.css. */
-    background-color: hsl(240deg 96% 68%);
+    background-color: hsl(348deg 100% 57%);
 }
 
 #account-deactivated-success-page .white-box,

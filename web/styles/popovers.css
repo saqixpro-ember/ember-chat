@@ -256,7 +256,7 @@
         margin-top: 4px;
     }
 
-    .zulip-icon-lock {
+    .ember-icon-lock {
         /* Override the margin-top set on the stream lock icon
            at the top-level, since we don't need to pull up this
            icon for the stream actions popover header.  */
@@ -350,7 +350,7 @@ ul.popover-group-menu-member-list {
 }
 
 .popover-group-menu-member {
-    .zulip-icon-user-group {
+    .ember-icon-user-group {
         color: var(--color-icon-purple);
     }
 }
@@ -853,7 +853,7 @@ ul.popover-group-menu-member-list {
             }
         }
 
-        .zulip-icon-chevron-down {
+        .ember-icon-chevron-down {
             padding-left: 5px;
             color: hsl(0deg 0% 58%);
             font-weight: lighter;
@@ -1063,7 +1063,7 @@ ul.popover-group-menu-member-list {
         color: var(--color-text-full-name);
         overflow-wrap: anywhere;
 
-        .zulip-icon.zulip-icon-bot {
+        .ember-icon.ember-icon-bot {
             vertical-align: middle;
         }
     }
@@ -1304,7 +1304,7 @@ ul.popover-group-menu-member-list {
         padding: 0.125em 0.625em;
         gap: 0.5em;
 
-        .zulip-icon {
+        .ember-icon {
             width: 0.933em;
             height: 0.933em;
         }

@@ -951,28 +951,30 @@ urls += [
     path("doc-permalinks/<str:doc_id>", doc_permalinks_view),
 ]
 
-urls += [
-    path(
-        "self-hosted-billing/",
-        self_hosting_auth_redirect_endpoint,
-        name="self_hosting_auth_redirect_endpoint",
-    ),
-    path(
-        "self-hosted-billing/not-configured/",
-        self_hosting_auth_not_configured,
-    ),
-    rest_path(
-        "json/self-hosted-billing",
-        GET=self_hosting_auth_json_endpoint,
-    ),
-]
+# Ember Chat: Disabled self-hosted billing features
+# urls += [
+#     path(
+#         "self-hosted-billing/",
+#         self_hosting_auth_redirect_endpoint,
+#         name="self_hosting_auth_redirect_endpoint",
+#     ),
+#     path(
+#         "self-hosted-billing/not-configured/",
+#         self_hosting_auth_not_configured,
+#     ),
+#     rest_path(
+#         "json/self-hosted-billing",
+#         GET=self_hosting_auth_json_endpoint,
+#     ),
+# ]
 
-urls += [
-    path(
-        "api/v1/zulip-services/verify/<str:access_token>/",
-        self_hosting_registration_transfer_challenge_verify,
-    ),
-]
+# Ember Chat: Disabled Zulip services integration
+# urls += [
+#     path(
+#         "api/v1/zulip-services/verify/<str:access_token>/",
+#         self_hosting_registration_transfer_challenge_verify,
+#     ),
+# ]
 
 if not settings.CORPORATE_ENABLED:  # nocoverage
     # This conditional behavior cannot be tested directly, since

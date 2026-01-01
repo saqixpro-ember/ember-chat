@@ -161,7 +161,7 @@ Handlebars.registerHelper("popover_hotkey_hints", (...args) => {
     for (const hotkey of hotkeys) {
         // The ⌘ symbol isn't vertically centered, so we use an icon.
         if (hotkey === "⌘") {
-            hotkey_hints += `<span class="popover-menu-hotkey-hint"><i class="zulip-icon zulip-icon-mac-command" aria-hidden="true"></i></span>`;
+            hotkey_hints += `<span class="popover-menu-hotkey-hint"><i class="ember-icon ember-icon-mac-command" aria-hidden="true"></i></span>`;
         } else {
             hotkey_hints += `<span class="popover-menu-hotkey-hint">${hotkey}</span>`;
         }

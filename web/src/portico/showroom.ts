@@ -302,9 +302,9 @@ $(window).on("load", () => {
 
     $("input[name='button-icon-select']").on("change", (e) => {
         if ($(e.target).attr("id") === "enable_button_icon") {
-            $(".action-button .zulip-icon").removeClass("hidden");
+            $(".action-button .ember-icon").removeClass("hidden");
         } else {
-            $(".action-button .zulip-icon").addClass("hidden");
+            $(".action-button .ember-icon").addClass("hidden");
         }
     });
 
@@ -320,10 +320,10 @@ $(window).on("load", () => {
 
     $<HTMLSelectOneElement>("select:not([multiple])#button_select_icon").on("change", function () {
         const icon_name = this.value;
-        $(".action-button .zulip-icon, .icon-button .zulip-icon").attr(
+        $(".action-button .ember-icon, .icon-button .ember-icon").attr(
             "class",
             (_index, className) =>
-                className.replaceAll(/zulip-icon-[^\s]+/g, `zulip-icon-${icon_name}`),
+                className.replaceAll(/ember-icon-[^\s]+/g, `ember-icon-${icon_name}`),
         );
     });
 

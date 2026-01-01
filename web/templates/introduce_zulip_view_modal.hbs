@@ -31,13 +31,13 @@
             {{#if (eq zulip_view "inbox")}}
                 {{#tr}}
                     Click <z-icon-inbox></z-icon-inbox> <z-highlight>Inbox</z-highlight> in the left sidebar.
-                    {{#*inline "z-icon-inbox"}}<i class="zulip-icon zulip-icon-inbox" aria-hidden="true"></i>{{/inline}}
+                    {{#*inline "z-icon-inbox"}}<i class="ember-icon ember-icon-inbox" aria-hidden="true"></i>{{/inline}}
                     {{#*inline "z-highlight"}}<b class="highlighted-element">{{> @partial-block}}</b>{{/inline}}
                 {{/tr}}
             {{else if (eq zulip_view "recent_conversations")}}
                 {{#tr}}
                     Click <z-icon-recent></z-icon-recent> <z-highlight>Recent conversations</z-highlight> in the left sidebar.
-                    {{#*inline "z-icon-recent"}}<i class="zulip-icon zulip-icon-recent" aria-hidden="true"></i>{{/inline}}
+                    {{#*inline "z-icon-recent"}}<i class="ember-icon ember-icon-recent" aria-hidden="true"></i>{{/inline}}
                     {{#*inline "z-highlight"}}<b class="highlighted-element">{{> @partial-block}}</b>{{/inline}}
                 {{/tr}}
             {{/if}}

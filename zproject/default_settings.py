@@ -423,10 +423,9 @@ NAGIOS_STAGING_RECEIVE_BOT = "nagios-staging-receive-bot@zulip.com" if PRODUCTIO
 # migration and eliminate this parameter in the future.
 SYSTEM_BOT_REALM = "zulipinternal"
 
-# Structurally, we will probably eventually merge
-# analytics into part of the main server, rather
-# than a separate app.
-EXTRA_INSTALLED_APPS = ["analytics"]
+# Ember Chat: Disabled analytics, corporate billing, and zilencer apps
+# These are not needed for a simple chat application
+EXTRA_INSTALLED_APPS: list[str] = []
 
 # Used to construct URLs to point to the Zulip server.  Since we
 # only support HTTPS in production, this is just for development.

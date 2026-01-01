@@ -235,7 +235,7 @@ function get_code_block_language(
 ): string {
     let language = "";
     const parent_contains_lang_metadata =
-        pre_element.parentElement?.classList.contains("zulip-code-block");
+        pre_element.parentElement?.classList.contains("ember-code-block");
 
     if (parent_contains_lang_metadata) {
         const codehilite_element = pre_element.closest<HTMLElement>(".codehilite");

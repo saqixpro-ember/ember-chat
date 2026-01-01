@@ -45,7 +45,7 @@
         align-items: center;
 
         .recent-view-table-link,
-        & > .zulip-icon {
+        & > .ember-icon {
             outline: 0;
         }
 
@@ -114,7 +114,7 @@
         padding-left: 0.1428em; /* Legacy 2px size at 14px/1em. */
     }
 
-    .zulip-icon-user {
+    .ember-icon-user {
         /* Legacy 11.2px size at 14px/1em. */
         font-size: 0.8em;
         text-align: center;
@@ -177,8 +177,8 @@
 
     .button-recent-filters {
         color: var(--color-text-default);
-        background-color: var(--color-background-zulip-button);
-        border: 1px solid var(--color-border-zulip-button);
+        background-color: var(--color-background-ember-button);
+        border: 1px solid var(--color-border-ember-button);
         border-radius: 40px;
         /* Matching to the height of the filter search box. */
         height: var(--recent-topics-filters-height);
@@ -190,11 +190,11 @@
         align-items: center;
 
         &:hover {
-            background-color: var(--color-background-zulip-button-hover);
+            background-color: var(--color-background-ember-button-hover);
         }
 
         &:active {
-            background-color: var(--color-background-zulip-button-active);
+            background-color: var(--color-background-ember-button-active);
         }
 
         &:focus {
@@ -453,7 +453,7 @@
         /* 64px at 20px/1em */
         min-width: 3.2em;
 
-        .zulip-icon-unread {
+        .ember-icon-unread {
             position: relative;
             top: 3px;
         }
@@ -561,8 +561,8 @@
             justify-content: center;
             align-items: center;
 
-            .zulip-icon.conversation-partners-icon,
-            .zulip-icon.zulip-icon-bot {
+            .ember-icon.conversation-partners-icon,
+            .ember-icon.ember-icon-bot {
                 opacity: 0.6;
             }
 
@@ -590,7 +590,7 @@
         }
     }
 
-    .stream-privacy .zulip-icon {
+    .stream-privacy .ember-icon {
         /* Let flexbox handle vertical alignment by
            pushing back against inline-block display. */
         display: block;

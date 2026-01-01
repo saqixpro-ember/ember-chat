@@ -24,7 +24,7 @@ export function show_button_loading_indicator($button: JQuery): void {
         return;
     }
     // First, we hide the current content of the button.
-    $button.find(".zulip-icon").css("visibility", "hidden");
+    $button.find(".ember-icon").css("visibility", "hidden");
     $button.find(".action-button-label").css("visibility", "hidden");
     // Next, we create a loading indicator with a unique id.
     // The unique id is required for the `filter` element in the loader SVG,
@@ -49,7 +49,7 @@ export function show_button_loading_indicator($button: JQuery): void {
 export function hide_button_loading_indicator($button: JQuery): void {
     $button.find(".button-loading-indicator").remove();
     $button.prop("disabled", false);
-    $button.find(".zulip-icon").css("visibility", "visible");
+    $button.find(".ember-icon").css("visibility", "visible");
     $button.find(".action-button-label").css("visibility", "visible");
 }
 

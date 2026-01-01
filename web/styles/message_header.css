@@ -75,8 +75,8 @@
         .stream-privacy i {
             font-size: 1.0714em; /* 15px at 14px em */
 
-            &.zulip-icon-globe,
-            &.zulip-icon-hashtag {
+            &.ember-icon-globe,
+            &.ember-icon-hashtag {
                 position: relative;
                 top: -0.5px;
             }
@@ -163,7 +163,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
 
-            i.zulip-icon-bot {
+            i.ember-icon-bot {
                 vertical-align: middle;
                 position: relative;
                 top: -1px;
@@ -237,7 +237,7 @@
     font-weight: 600;
     overflow: hidden;
 
-    .zulip-icon.zulip-icon-globe {
+    .ember-icon.ember-icon-globe {
         position: relative;
         top: 1px;
     }

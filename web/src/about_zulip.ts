@@ -18,7 +18,7 @@ export function launch(): void {
         },
     });
 
-    const zulip_version_clipboard = new ClipboardJS("#about-zulip .zulip-version");
+    const zulip_version_clipboard = new ClipboardJS("#about-zulip .ember-version");
     zulip_version_clipboard.on("success", (e) => {
         assert(e.trigger instanceof HTMLElement);
         show_copied_confirmation(e.trigger, {
@@ -26,7 +26,7 @@ export function launch(): void {
         });
     });
 
-    const zulip_merge_base_clipboard = new ClipboardJS("#about-zulip .zulip-merge-base");
+    const zulip_merge_base_clipboard = new ClipboardJS("#about-zulip .ember-merge-base");
     zulip_merge_base_clipboard.on("success", (e) => {
         assert(e.trigger instanceof HTMLElement);
         show_copied_confirmation(e.trigger, {

@@ -98,7 +98,7 @@ a.no-underline:focus {
     }
 }
 
-i.zulip-icon.zulip-icon-bot {
+i.ember-icon.ember-icon-bot {
     color: var(--color-icon-bot);
 }
 

@@ -364,7 +364,7 @@
         margin: 2px 2px 2px 1px;
         color: var(--color-vdots-visible);
 
-        & i.zulip-icon {
+        & i.ember-icon {
             font-size: 1.0625em;
         }
 
@@ -540,8 +540,8 @@
         margin-right: var(--left-sidebar-unread-offset);
     }
 
-    .zulip-icon-collapse,
-    .zulip-icon-expand {
+    .ember-icon-collapse,
+    .ember-icon-expand {
         grid-area: icon;
         /* 2px at 16px/1em to properly vertically center it */
         margin-top: 0.125em;
@@ -605,7 +605,7 @@
                 outline: none;
             }
 
-            .zulip-icon:not(.user-circle) {
+            .ember-icon:not(.user-circle) {
                 color: var(--color-left-sidebar-dm-partners-icon);
                 vertical-align: -0.2em;
             }
@@ -641,17 +641,17 @@
     }
 }
 
-.zulip-icon-heading-triangle-right {
+.ember-icon-heading-triangle-right {
     transition:
         opacity 140ms linear,
         rotate 140ms linear;
 }
 
-.zulip-icon-heading-triangle-right.rotate-icon-down {
+.ember-icon-heading-triangle-right.rotate-icon-down {
     rotate: 90deg;
 }
 
-.zulip-icon-heading-triangle-right.rotate-icon-right {
+.ember-icon-heading-triangle-right.rotate-icon-right {
     rotate: 0deg;
 }
 
@@ -929,7 +929,7 @@ ul.filters {
         opacity: var(--opacity-left-sidebar-muted);
     }
 
-    .zulip-icon-follow {
+    .ember-icon-follow {
         opacity: 0.5;
 
         &:hover {
@@ -1627,17 +1627,17 @@ li.active-sub-filter {
         display: flex;
         place-content: center center;
 
-        .zulip-icon.zulip-icon-globe {
+        .ember-icon.ember-icon-globe {
             /* 12px at 14px/1em */
             font-size: 0.8571em;
         }
 
-        .zulip-icon.zulip-icon-hashtag {
+        .ember-icon.ember-icon-hashtag {
             /* 13px at 14px/1em */
             font-size: 0.9286em;
         }
 
-        .zulip-icon.zulip-icon-lock {
+        .ember-icon.ember-icon-lock {
             /* 13px at 14px/1em */
             font-size: 0.9286em;
         }
@@ -1989,7 +1989,7 @@ li.active-sub-filter {
        given the reduced margin-left above. */
     padding-left: 1px;
     /* Set the icon size, which will be inherited
-       by .zulip-icon */
+       by .ember-icon */
     /* 17px at 16px/1em */
     font-size: 1.0625em;
 

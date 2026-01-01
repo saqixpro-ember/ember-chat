@@ -116,7 +116,7 @@ export function initialize_bot_click_handlers(): void {
         const bot_email = $bot_info.attr("data-email");
 
         // Select the <a> element by matching data-email.
-        const $zuliprc_link = $(`.hidden-zuliprc-download[data-email="${bot_email}"]`);
+        const $zuliprc_link = $(`.hidden-emberrc-download[data-email="${bot_email}"]`);
         $zuliprc_link.attr("href", generate_zuliprc_url(bot_id));
         $zuliprc_link[0]?.click();
     });
